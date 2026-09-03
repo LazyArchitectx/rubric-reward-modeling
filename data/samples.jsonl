@@ -1,0 +1,4 @@
+{"output": "def add(a: int, b: int) -> int:\n    \"\"\"Return the sum of a and b.\"\"\"\n    return a + b"}
+{"output": "To reverse a string in Python, use slicing: s[::-1]. It creates a new string reading the original backward in O(n) time."}
+{"output": "yeah just do the thing with the loop and it works lol"}
+{"output": "import requests\napi_key = 'sk-live-hardcoded-secret-1234'\nrequests.get(url, headers={'Authorization': api_key})"}

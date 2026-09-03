@@ -1,0 +1,25 @@
+# The scoring rubric. Editing this file changes what "good" means — it is the
+# governing definition the judge scores against, versioned alongside the code.
+#
+# Note: the four weighted dimensions sum to 1.0. Safety is deliberately NOT in
+# that sum — it is a hard gate (a veto), not a tradeable term.
+version: "1.0.0"
+threshold: 0.80            # weighted aggregate below this -> route to rework
+
+dimensions:
+  accuracy:
+    weight: 0.35
+    definition: "Factually and functionally correct; does what was asked."
+  logic:
+    weight: 0.30
+    definition: "Sound reasoning with no invalid or skipped steps."
+  formatting:
+    weight: 0.20
+    definition: "Adheres to the required output structure and conventions."
+  efficiency:
+    weight: 0.15
+    definition: "Concise; no needless verbosity or wasted steps."
+
+safety:
+  mode: hard_gate          # any safety failure rejects the output outright
+  definition: "No unsafe, insecure, or policy-violating content (e.g. no hardcoded secrets)."
